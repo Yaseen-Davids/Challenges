@@ -1,0 +1,437 @@
+/* THIS IS THE CSS STYLESHEET */
+
+/* This is the code for the background gradient */
+body{
+    background: linear-gradient(to right, #8E0E00 ,#1F1C18)
+}
+
+/* This is the grid container code */
+.grid-container{
+    display: grid;
+    /* This is the grid container layout */
+    grid-template-areas: 'header header header header header'
+    'home-screen home-screen home-screen home-screen home-screen'
+    'navbar category-1 category-1 category-1 category-1'
+    'navbar cat1-pic1 cat1-pic2 cat1-pic3 cat1-pic4'
+    'navbar cat1-pic5 cat1-pic6 cat1-pic7 cat1-pic8'
+    'navbar category-2 category-2 category-2 category-2'
+    'navbar cat2-pic1 cat2-pic2 cat2-pic3 cat2-pic4'
+    'navbar cat2-pic5 cat2-pic6 cat2-pic7 cat2-pic8'
+    'navbar category-3 category-3 category-3 category-3'
+    'navbar cat3-pic1 cat3-pic2 cat3-pic3 cat3-pic4'
+    'footer footer footer footer footer';
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+/* THIS IS THE MAIN HEADER */
+.header{
+    grid-area: header;
+    border-bottom: 2px solid white;
+    box-shadow: 3px 3px 10px #b2b2b2;
+    font-family: 'Black Han Sans', sans-serif;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 5px;
+    float: left;
+    text-shadow: 2px 2px 5px red;
+}
+
+/* THIS IS THE HEADER SLOGAN */
+.header > p{
+    text-align: right;
+    margin-right: 50px;
+    color: white;
+    text-shadow: 0px 0px 0px;
+    font-family: 'Acme', sans-serif;
+}
+
+/* THIS IS THE HOME SCREEN BACKGROUND IMAGE */
+.home-screen{
+    grid-area: home-screen;
+    height: 500px;
+    background: url('../images/header.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* THIS IS THE NAVIGATION BAR CODE */
+.navbar{
+    grid-area: navbar;
+    font-size: 1.25em;
+    background: black;
+    color: white;
+}
+
+/* THIS IS THE HEADER OF THE NAVIGATION BAR */
+.navbar > h3{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    letter-spacing: 5px;
+}
+
+/* THIS IS THE NAVIGATION BAR SUB HEADING */
+.navbar > h4{
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+/* THIS IS THE STICKY NAVBAR THAT FOLLOWS THE USER */
+.navigate{
+    margin-left: 10px;
+    margin-right: 10px;
+    position: sticky;
+    top: 50px;
+    border-radius: 5%;
+    border-bottom: 2px solid transparent;
+    transition: all ease-out 0.5s;
+}
+
+/* THIS IS THE STYLE FOR THE LIST OF THE NAVBAR */
+.navigate > ul > li{
+    list-style: none;
+    margin-left: -20px;
+}
+
+/* THIS IS THE STYLE FOR THE LINKS OF THE NAVBAR */
+.navigate > ul > li > a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Acme', sans-serif;
+    line-height: 60px;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
+
+/* THIS IS THE STYLE FOR THE LINKS OF THE NAVBAR */
+.navigate > ul > li > a:hover{
+    color: red;
+    transition: all ease-out 0.5s;
+}
+
+/* THIS SIMPLE CODE CHANGES THE COLOR OF THE TEXT RED */
+.col_red{
+    color: red;
+}
+
+/* THIS IS CATEGORY 1 */
+.category-1{
+    grid-area: category-1;
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.25em;
+    background: black;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* THIS IS THE PLAY BOX THAT SHOWS WHEN HOVER OVER A PICTURE */
+.box1{
+    position: relative;
+    height: 70px;
+    width: 70px;
+    display: none;
+    top: 35%;
+    left: 35%;
+    background: url('../images/play-button.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* THIS IS CATEORY 1 PICTURE 1 */
+.cat1-pic1{
+    grid-area: cat1-pic1;
+    height: 300px;
+    background: #cecece;
+    background: url('../images/lethal.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat1-pic1:hover > .box1{
+    display: block;
+}
+
+/* THIS IS CATEORY 1 PICTURE 2 */
+.cat1-pic2{
+    grid-area: cat1-pic2;
+    height: 300px;
+    background: #cecece;
+    background: url('../images/suits.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat1-pic2:hover > .box1{
+    display: block;
+}
+
+/* THIS IS CATEORY 1 PICTURE 3 */
+.cat1-pic3{
+    grid-area: cat1-pic3;
+    height: 300px;
+    background: #cecece;
+    border-radius: 15px;
+    background: url('../images/riverdale.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat1-pic3:hover > .box1{
+    display: block;
+}
+
+/* THIS IS CATEORY 1 PICTURE 4 */
+.cat1-pic4{
+    grid-area: cat1-pic4;
+    height: 300px;
+    background: #cecece;
+    border-radius: 15px;
+    background: url('../images/timeless.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat1-pic4:hover > .box1{
+    display: block;
+}
+
+/* THIS IS CATEORY 1 PICTURE 5 */
+.cat1-pic5{
+    grid-area: cat1-pic5;
+    height: 300px;
+    background: #cecece;
+    border-radius: 15px;
+    background: url('../images/lucifer.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat1-pic5:hover > .box1{
+    display: block;
+}
+
+/* THIS IS CATEORY 1 PICTURE 6 */
+.cat1-pic6{
+    grid-area: cat1-pic6;
+    height: 300px;
+    background: #cecece;
+    border-radius: 15px;
+    background: url('../images/blind.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat1-pic6:hover > .box1{
+    display: block;
+}
+
+/* THIS IS CATEORY 1 PICTURE 7 */
+.cat1-pic7{
+    grid-area: cat1-pic7;
+    height: 300px;
+    background: #cecece;
+    border-radius: 15px;
+    background: url('../images/supernatural.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat1-pic7:hover > .box1{
+    display: block;
+}
+
+/* THIS IS CATEORY 1 PICTURE 8 */
+.cat1-pic8{
+    grid-area: cat1-pic8;
+    height: 300px;
+    background: #cecece;
+    border-radius: 15px;
+    background: url('../images/bbt.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat1-pic8:hover > .box1{
+    display: block;
+}
+
+/* CATEGORY 2 */
+.category-2{
+    grid-area: category-2;
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.25em;
+    background: black;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* THIS IS CATEORY 2 PICTURE 1 */
+.cat2-pic1{
+    grid-area: cat2-pic1;
+    height: 300px;
+    background: #cecece;
+    background: url('../images/arrow.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat2-pic1:hover > .box1{
+    display: block;
+}
+
+/* THIS IS CATEORY 2 PICTURE 2 */
+.cat2-pic2{
+    grid-area: cat2-pic2;
+    height: 300px;
+    background: #cecece;
+    background: url('../images/flash.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat2-pic2:hover > .box1{
+    display: block;
+}
+
+/* THIS IS CATEORY 2 PICTURE 3 */
+.cat2-pic3{
+    grid-area: cat2-pic3;
+    height: 300px;
+    background: #cecece;
+    border-radius: 15px;
+    background: url('../images/dc.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat2-pic3:hover > .box1{
+    display: block;
+}
+
+/* THIS IS CATEORY 2 PICTURE 4 */
+.cat2-pic4{
+    grid-area: cat2-pic4;
+    height: 300px;
+    background: #cecece;
+    border-radius: 15px;
+    background: url('../images/supergirl.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat2-pic4:hover > .box1{
+    display: block;
+}
+
+/* THIS IS CATEORY 2 PICTURE 5 */
+.cat2-pic5{
+    grid-area: cat2-pic5;
+    height: 300px;
+    background: #cecece;
+    border-radius: 15px;
+    background: url('../images/agents.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat2-pic5:hover > .box1{
+    display: block;
+}
+
+/* CATEGORY 3 */
+.category-3{
+    grid-area: category-3;
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.25em;
+    background: black;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* THIS IS CATEORY 3 PICTURE 1 */
+.cat3-pic1{
+    grid-area: cat3-pic1;
+    height: 300px;
+    background: #cecece;
+    background: url('../images/friends.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat3-pic1:hover > .box1{
+    display: block;
+}
+
+/* THIS IS CATEORY 3 PICTURE 2 */
+.cat3-pic2{
+    grid-area: cat3-pic2;
+    height: 300px;
+    background: #cecece;
+    background: url('../images/smll.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat3-pic2:hover > .box1{
+    display: block;
+}
+
+/* THIS IS CATEORY 3 PICTURE 3 */
+.cat3-pic3{
+    grid-area: cat3-pic3;
+    height: 300px;
+    background: #cecece;
+    border-radius: 15px;
+    background: url('../images/70s.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat3-pic3:hover > .box1{
+    display: block;
+}
+
+/* THIS IS CATEORY 3 PICTURE 4 */
+.cat3-pic4{
+    grid-area: cat3-pic4;
+    height: 300px;
+    background: #cecece;
+    border-radius: 15px;
+    background: url('../images/tp.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat3-pic4:hover > .box1{
+    display: block;
+}
+
+/* FOOTER CONTENTS */
+.footer{
+    grid-area: footer;
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-size: 1.15em;
+    letter-spacing: 2px;
+    font-family: 'Acme', sans-serif;
+}
+
+/* FOOTER TEXT */
+p1{
+    float: left;
+}
+p2{
+    float: right;
+}

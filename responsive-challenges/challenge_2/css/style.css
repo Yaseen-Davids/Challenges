@@ -1,0 +1,432 @@
+/* This is the css stylesheet */
+
+/* This is the grid container */
+.grid-container{
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar'
+    'content-body content-body content-body'
+    'footer footer footer';
+}
+
+/* This is the navbar */
+.navbar{
+    grid-area: navbar;
+    height: 55px;
+    background: black;
+    margin-top: -8px;
+}
+
+/* This is the logo inside the navbar */
+.logo{
+    width: 20%;
+    float: left;
+    height: 100%;
+    margin-left: 10%;
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+    font-size: 2em;
+    margin-top: -25px;
+    color: white;
+}
+.logo > a{
+    color: white;
+    text-decoration: none;
+}
+
+/* This is the links inside the navbar */
+.links{
+    float: left;
+    height: 100%;
+    width: 40%;
+    margin-top: 10px;
+    word-spacing: 10px;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 1.65em;
+}
+.links > a:link, .links > a:visited{
+    color: white;
+    text-decoration: none;
+}
+.links > a:hover{
+    background-color: #424242;
+}
+
+/* This is the social media inside the navbar */
+.social-media{
+    float: left;
+    height: 100%;
+    width: 18%;
+    margin-right: 10%;
+}
+
+/* This is the facebook logo */
+.face-logo1{
+    margin-top: 7px;
+    width: 20%;
+    height: 70%;
+    background: url('../images/facebook.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+/* This is the twitter logo */
+.twitter-logo1{
+    margin-top: 7px;
+    width: 20%;
+    height: 70%;
+    background: url('../images/twitter.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 20px;
+}
+
+/* This is the body of contents */
+.content-body{
+    grid-area: content-body;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-areas: 'main-head main-head'
+    'content_box ads-box';
+    grid-template-columns: 70% 30%;
+    grid-gap: 20px;
+}
+
+/* This is the main header */
+.main-head{
+    grid-area: main-head;
+    height: 250px;
+}
+
+/* This is the links of the header */
+.sub_links{
+    height: 30px;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 1.2em;
+    word-spacing: 10px;
+    font-weight: bold;
+}
+.sub_links > a{
+    text-decoration: none;
+}
+
+/* This is the main header */
+.top_header{
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    margin-top: -20px;
+}
+
+/* This the author section of the header */
+.author{
+    height: 32px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* This code changes the color of text to pink */
+.col-pink{
+    color: #e00fc4;
+}
+
+/* This code changes the color of text to blue */
+.col-blue{
+    color: blue;
+}
+
+/* This is the logo properties */
+.face-logo, .twitter-logo, .share-logo{
+    height: 30px;
+    width: 50px;
+    float: left;
+}
+
+/* This is the facebook logo */
+.face-logo{
+    background: url('../images/facebook.png');
+    background-size: contain;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+/* This is the twitter logo */
+.twitter-logo{
+    background: url('../images/twitter.png');
+    background-size: contain;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+/* This is the share logo */
+.share-logo{
+    background: url('../images/share.png');
+    background-size: contain;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+/* This is the content box */
+.content_box{
+    grid-area: content_box;
+    height: 2700px;
+}
+
+/* This is the ads box */
+.ads-box{
+    grid-area: ads-box; 
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    height: 500px;
+    padding: 10px;
+}
+
+/* This is the big facebook picture on the mobiles */
+.face-image{
+    height: 450px;
+    background: url('../images/faces-image.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* This is the body of the webpage */
+.facebook_body{
+    margin-top: 20px;
+    height: 2800px;
+    font-size: 1.25em;
+    font-family: 'Raleway', sans-serif;
+    color: #424242;
+}
+
+/* This is the sub heading of the facebook body */
+.head-2{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+/* This is the story sub heading */
+.story{
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    width: 30%;
+}
+
+/* This is the list styling */
+ul > li > a{
+    text-decoration: none;
+    line-height: 40px;
+}
+ul > li > a:hover{
+    color: red;
+}
+
+/* This is the story sub heading */
+.story-2{
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    width: 24%;
+}
+
+/* This is the youtube iframe */
+iframe{
+    margin-left: 20px;
+}
+
+/* This is the ads box 1 image */
+.box_1{
+    height: 200px;
+    background: url('../images/fortnite.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* This is the ads box text */
+.box_1-text{
+    font-family: 'Raleway', sans-serif;
+    color: #424242;
+}
+
+/* This is the ads box 2 image */
+.box_2{
+    height: 200px;
+    background: url('../images/movie.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* This is the articles box */
+.article-box1{
+    height: 180px;
+}
+
+/* This is the first article image */
+.article-box1-image{
+    height: 180px;
+    width: 40%;
+    float: left;
+    background: url('../images/article1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* This is the first article text */
+.article-box1-text{
+    height: 180px;
+    width: 55%;
+    float: left;
+    margin-left: 20px;
+}
+
+/* This is the article box */
+.article-box2{
+    height: 180px;
+}
+
+/* This is the second article image */
+.article-box2-image{
+    height: 180px;
+    width: 40%;
+    float: left;
+    background: url('../images/article2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* This is the second article text */
+.article-box2-text{
+    height: 180px;
+    width: 55%;
+    float: left;
+    margin-left: 20px;
+}
+
+/* This is article box 3 */
+.article-box3{
+    height: 180px;
+}
+
+/* This is the thrid article image */
+.article-box3-image{
+    height: 180px;
+    width: 40%;
+    float: left;
+    background: url('../images/article3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* This is the thrid article text */
+.article-box3-text{
+    height: 180px;
+    width: 55%;
+    float: left;
+    margin-left: 20px;
+}
+
+/* This is the forth article box */
+.article-box4{
+    height: 180px;
+}
+/* This is the forth article image */
+.article-box4-image{
+    height: 180px;
+    width: 40%;
+    float: left;
+    background: url('../images/article4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* This is the forth article text */
+.article-box4-text{
+    height: 180px;
+    width: 55%;
+    float: left;
+    margin-left: 20px;
+}
+
+/* This is the last box */
+.last-box{
+    color: #e00fc4;
+    text-decoration: none;
+}
+.last-box:hover{
+    color: red;
+}
+
+/* This is the footer section of the page */
+.footer{
+    grid-area: footer;
+    background: black;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+/* This is the footer logo */
+.foot-logo{
+    height: 150px;
+    color: white;
+    width: 20%;
+    font-size: 1.5em;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 3px;
+    margin-top: 100px;
+    margin-left: 50px;
+    float: left;
+}
+/* This is the footer links */
+.foot-links{
+    margin-top: 60px;
+    float: left;
+    width: 50%;
+    height: 180px;
+}
+/* This is the footer links styling */
+.foot-links > ul > a{
+    color: #e00fc4;
+    text-decoration: none;
+    float: left;
+    font-size: 0.9em;
+    list-style: none;
+}
+.foot-links > p{
+    color: white;
+    margin-left: 40px;
+}
+.foot-links > a{
+    color: #e00fc4;
+    text-decoration: none;
+    float: left;
+    font-size: 0.9em;
+    list-style: none;
+    margin-left: 40px;
+}
+
+/* This is the footer about section */
+.foot-about{
+    margin-top: 20px;
+    float: left;
+    width: 20%;
+    height: 240px;
+    color: white;
+    text-align: right;
+}
+/* This is the footer about styling */
+.foot-about > h3{
+    font-family: 'Luckiest Guy', cursive;
+    text-align: right;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 1.5em;
+}
+.foot-about > a{
+    color: #e00fc4;
+    text-decoration: none;
+}

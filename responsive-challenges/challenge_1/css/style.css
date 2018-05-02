@@ -1,0 +1,80 @@
+/* THIS IS MY CSS STYLESHEET */
+
+/* This is the code for the font of the body */
+body{
+    font-family: 'Gothic A1', sans-serif;
+}
+
+/* This is the code for grids */
+.grid-container{
+    display: grid;
+    grid-template-areas: 'header header header'
+    'navbar section section'
+    'article_1 article_2 article_3'
+    'footer footer footer';
+    grid-gap: 10px;
+}
+
+/* This is the code for the header grid */
+header{
+    grid-area: header;
+    background: #14d124;
+    height: 100px;
+    border-radius: 5px;
+}
+
+/* This is the code for the nav grid */
+nav{
+    grid-area: navbar;
+    background: #14d124;
+    height: 100px;
+    border-radius: 5px;
+}
+
+/* This is the code for the section grid */
+section{
+    grid-area: section;
+    background: #14d124;
+    height: 100px;
+    border-radius: 5px;
+}
+
+/* This is the code for the article 1 grid */
+.article_1{
+    grid-area: article_1;
+    background: #14d124;
+    border-radius: 5px;
+    height: 78vh;
+}
+
+/* This is the code for the article 2 grid */
+.article_2{
+    grid-area: article_2;
+    background: #14d124;
+    height: 100px;
+    border-radius: 5px;
+    height: 78vh;
+}
+
+/* This is the code for the article 3 grid */
+.article_3{
+    grid-area: article_3;
+    background: #14d124;
+    height: 100px;
+    border-radius: 5px;
+    height: 78vh;
+}
+
+/* This is the code for the footer grid */
+footer{
+    grid-area: footer;
+    background: #14d124;
+    height: 100px;
+    border-radius: 5px;
+}
+
+/* This is the code that changes the header position and colour */
+h1, h2{
+    text-align: center;
+    color: white;
+}

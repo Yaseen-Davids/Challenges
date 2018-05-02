@@ -1,0 +1,162 @@
+/* This is the css for different devices */
+
+/* This is for mobile view */
+@media only screen
+  and (min-device-width: 1px)
+  and (max-device-width: 500px)
+  and (-webkit-min-device-pixel-ratio: 2){
+      .links{
+          font-size: 1em;
+      }
+      .ads-box{
+          display: none;
+      }
+      .content-body{
+        grid-area: content-body;
+        grid-template-areas: 'main-head main-head'
+        'content_box content_box';
+    }
+    .facebook_body{
+        font-size: 2em;
+    }
+    .footer{
+        font-size: 0.5em;
+        left: 0;
+    }
+    .top_header{
+        font-size: 2.8em;
+    }
+    .story{
+        width: 47%;
+    }
+    .story-2{
+        width: 38%;
+    }
+}
+
+/* This is for tablets view */
+@media only screen
+  and (min-device-width: 500px)
+  and (max-device-width: 1020px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    .logo{
+        margin-left: 10%;
+    }
+
+    .links{
+        font-size: 1em;
+        margin-left: 10px;
+    }
+
+    .ads-box{
+        display: none;
+    }
+    .content-body{
+        grid-area: content-body;
+        grid-template-areas: 'main-head main-head'
+        'content_box content_box';
+    }
+    .facebook_body{
+        font-size: 1.3em;
+    }
+    .footer{
+        font-size: 0.7em;
+        height: 270px;
+    }
+
+    .story{
+        width: 30%;
+    }
+
+    .story-2{
+        width: 24%;
+    }
+}
+
+/* This is for larger tablet / laptop devices */
+@media only screen
+  and (min-device-width: 1020px)
+  and (max-device-width: 1280px)
+  and (-webkit-min-device-pixel-ratio: 2){
+
+    .links{
+        font-size: 1.2em;
+    }
+    .footer{
+        font-size: 0.8em;
+        width: 107%;
+    }
+    .story{
+        width: 38%;
+    }
+    .story-2{
+        width: 30%;
+    }
+}
+
+/* This is the laptop view */
+@media only screen
+  and (min-device-width: 1280px)
+  and (max-device-width: 1440px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    .story{
+        width: 34%;
+    }
+    .story-2{
+        width: 26%;
+    }
+    .links{
+        font-size: 1.5em;
+    }
+  }
+
+/* This is for large desktop screens */
+@media only screen
+  and (min-device-width: 2000px)
+  and (max-device-width: 2600px)
+  and (-webkit-min-device-pixel-ratio: 2){
+      .navbar{
+          height: 100px;
+      }
+      .logo{
+          margin-top: 0;
+      }
+      .links{
+          font-size: 2.4em;
+          margin-top: 30px;
+      }
+      .facebook_body{
+        font-size: 2.5em;
+    }
+    .footer{
+        height: 580px;
+    }
+    .article-box1-image, .article-box2-image, .article-box3-image, .article-box4-image{
+        height: 300px;
+    }
+    .article-box1, .article-box2, .article-box3, .article-box4{
+        height: 300px;
+    }
+    .story{
+        width: 34%;
+    }
+    .ads-box{
+        height: 900px;
+    }
+    .box_1{
+        height: 350px;
+    }
+    .box_1-text{
+        font-size: 2em;
+    }
+    .box_2{
+        height: 350px;
+    }
+    .top_header{
+        font-size: 3.5em;
+    }
+    iframe{
+        width: 1480px;
+        height: 832px;
+    }
+  }

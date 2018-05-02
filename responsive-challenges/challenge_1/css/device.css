@@ -1,0 +1,31 @@
+/* THIS IS THE CODE FOR MEDIA DEVICES */
+
+/* This code is for mobile */
+@media only screen
+  and (min-device-width: 1px)
+  and (max-device-width: 500px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    header, nav, section, .article_1, .article_2, .article_3, footer{
+          background-color: red;
+    }
+}
+
+/* This is the code for tablets */
+@media only screen
+  and (min-device-width: 500px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    header, nav, section, .article_1, .article_2, .article_3, footer{
+          background-color: blue;
+    }
+}
+
+/* This is the code for large desktops */
+@media only screen
+  and (min-device-width: 1400px)
+  and (max-device-width: 3000px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    header, nav, section, .article_1, .article_2, .article_3, footer{
+          background-color: orange;
+    }
+}
