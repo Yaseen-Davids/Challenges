@@ -1,0 +1,496 @@
+/* This is the code for the body to change the font */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* This is the code for the grid container */
+.grid-container{
+    display: grid;
+    /* The following code is for the layout of the website */
+    grid-template-areas: 
+    'left-navbar main-head main-head'
+    'left-navbar cat-1 cat-1'
+    'left-navbar cat1-pic1 cat1-pic2'
+    'left-navbar cat1-pic3 cat1-pic4'
+    'left-navbar cat-2 cat-2'
+    'left-navbar cat2-pic1 cat2-pic2'
+    'left-navbar cat2-pic3 cat2-pic4'
+    'left-navbar cat-3 cat-3'
+    'left-navbar cat3-pic1 cat3-pic2'
+    'left-navbar cat3-pic3 cat3-pic4'
+    'left-navbar hire-box hire-box'
+    'footer footer footer'
+    ;
+    grid-gap: 20px;
+    grid-template-columns: 20% 1fr 1fr;
+}
+
+/* This is the code for the navigation bar on the left */
+.left-navbar{
+    grid-area: left-navbar;
+    border: 1px solid black;
+    background: #333;
+}
+
+/* This is the code for the picture inside the navigation bar */
+.my-pic{
+    border: 5px solid white;
+    background: url('../images/my-face.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+/* This is the code for the information inside the navigation bar */
+.my-info{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 100px;
+    color: white;
+    text-align: center;
+}
+
+/* This code refers to the paragraph inside the info box */
+.my-info > p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* This is the code for the navbar to always be where it is */
+.navbar{
+    position: fixed;
+    margin-top: -40px;
+}
+
+/* This code is for the unordered list to remove the default dot */
+ul{
+    list-style: none;
+    line-height: 50px;
+}
+
+/* This is the code for the navbar links */
+a:link, a:visited{
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: all ease-out 0.5s;
+}
+a:hover, a:visited{
+    border-color: white;
+}
+
+/* This is the code for the main header */
+.main-head{
+    grid-area: main-head;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 4px;
+    padding: 10px;
+    background: #20d5db;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px #6d6d6d;
+}
+
+
+/* CATEGORY 1 */
+/* This is the code for the category 1 header */
+.cat-1{
+    grid-area: cat-1;
+    text-align: center;
+    color: white;
+    font-size: 1.25em;
+    background: black;
+    box-shadow: 2px 2px 15px #6d6d6d;
+    margin-top: 20px;
+}
+
+/* CATEGORY 1 PICTURE 1 */
+/* This is the code for the picture 1 inside category 1 */
+.cat1-pic1{
+    grid-area: cat1-pic1;
+    background: url('../images/1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 240px;
+    transition: ease-in-out 0.5s;
+    box-shadow: 2px 2px 15px black;
+}
+/* This is the code for the text inside the picture 1 */
+.cat1-pic1 > h3{
+    text-align: center;
+    margin-top: 30%;
+    color: black;
+    background: white;
+    opacity: 0.7;
+    padding: 10px;
+}
+.cat1-pic1:hover{
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+
+/* CATEGORY 1 PICTURE 2 */
+/* This is the code for the picture 2 inside category 1 */
+.cat1-pic2{
+    grid-area: cat1-pic2;
+    background: url('../images/12.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    transition: ease-in-out 0.5s;
+    box-shadow: 2px 2px 15px black;
+}
+/* This is the code for the text inside picture 2 */
+.cat1-pic2 > h3{
+    text-align: center;
+    margin-top: 35%;
+    color: black;
+    background: white;
+    opacity: 0.7;
+    padding: 10px;
+}
+.cat1-pic2:hover{
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+
+/* CATEGORY 1 PICTURE 3 */
+/* This is the code for the picture 3 inside category 1 */
+.cat1-pic3{
+    grid-area: cat1-pic3;
+    background: url('../images/9.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    transition: ease-in-out 0.5s;
+    box-shadow: 2px 2px 15px black;
+}
+/* This the code for the text inside picture 3 */
+.cat1-pic3 > h3{
+    text-align: center;
+    margin-top: 30%;
+    color: black;
+    background: white;
+    opacity: 0.7;
+    padding: 10px;
+}
+.cat1-pic3:hover{
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+
+/* CATEGORY 1 PICTURE 4 */
+/* This is the code for the picture 1 inside category 1 */
+.cat1-pic4{
+    grid-area: cat1-pic4;
+    margin-top: 50px;
+    background: url('../images/10.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    transition: ease-in-out 0.5s;
+    box-shadow: 2px 2px 15px black;
+}
+/* This is the code for the text inside picture 4 */
+.cat1-pic4 > h3{
+    text-align: center;
+    margin-top: 30%;
+    color: black;
+    background: white;
+    opacity: 0.7;
+    padding: 10px;
+}
+.cat1-pic4:hover{
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+
+/* CATEGORY 2 */
+/* CATEGORY 2 MAIN HEADER */
+.cat-2{
+    grid-area: cat-2;
+    text-align: center;
+    color: white;
+    font-size: 1.25em;
+    background: black;
+    box-shadow: 2px 2px 15px #6d6d6d;
+    margin-top: 20px;
+}
+
+/* CATEGORY 2 PICTURE 1 */
+/* This is the code for the picture 1 inside category 2 */
+.cat2-pic1{
+    grid-area: cat2-pic1;
+    background: url('../images/iv.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 240px;
+    transition: ease-in-out 0.5s;
+    box-shadow: 2px 2px 15px black;
+}
+/* This is the code for the text inside the picture 1 */
+.cat2-pic1 > h3{
+    text-align: center;
+    margin-top: 30%;
+    color: black;
+    background: white;
+    opacity: 0.7;
+    padding: 10px;
+}
+.cat2-pic1:hover{
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+
+/* CATEGORY 2 PICTURE 2 */
+/* This is the code for the picture 2 inside category 2 */
+.cat2-pic2{
+    grid-area: cat2-pic2;
+    background: url('../images/a5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    transition: ease-in-out 0.5s;
+    box-shadow: 2px 2px 15px black;
+}
+/* This is the code for the text inside the picture 2 */
+.cat2-pic2 > h3{
+    text-align: center;
+    margin-top: 35%;
+    color: black;
+    background: white;
+    opacity: 0.7;
+    padding: 10px;
+}
+.cat2-pic2:hover{
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+
+/* CATEGORY 2 PICTURE 3 */
+/* This is the code for the picture 3 inside category 2 */
+.cat2-pic3{
+    grid-area: cat2-pic3;
+    background: url('../images/m4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    transition: ease-in-out 0.5s;
+    box-shadow: 2px 2px 15px black;
+}
+/* This is the code for the text inside the picture 3 */
+.cat2-pic3 > h3{
+    text-align: center;
+    margin-top: 30%;
+    color: black;
+    background: white;
+    opacity: 0.7;
+    padding: 10px;
+}
+.cat2-pic3:hover{
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+
+/* CATEGORY 2 PICTURE 4 */
+/* This is the code for the picture 4 inside category 2 */
+.cat2-pic4{
+    grid-area: cat2-pic4;
+    margin-top: 50px;
+    background: url('../images/w204.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    transition: ease-in-out 0.5s;
+    box-shadow: 2px 2px 15px black;
+}
+/* This is the code for the text inside the picture 4 */
+.cat2-pic4 > h3{
+    text-align: center;
+    margin-top: 30%;
+    color: black;
+    background: white;
+    opacity: 0.7;
+    padding: 10px;
+}
+.cat2-pic4:hover{
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+
+/* CATEGORY 3 */
+/* CATEGORY 3 MAIN HEADER */
+.cat-3{
+    grid-area: cat-3;
+    text-align: center;
+    color: white;
+    font-size: 1.25em;
+    background: black;
+    box-shadow: 2px 2px 15px #6d6d6d;
+    margin-top: 20px;
+}
+
+/* CATEGORY 3 PICTURE 1 */
+/* This is the code for the picture 1 inside category 3 */
+.cat3-pic1{
+    grid-area: cat3-pic1;
+    background: url('../images/supra.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 240px;
+    transition: ease-in-out 0.5s;
+    box-shadow: 2px 2px 15px black;
+}
+/* This is the code for the text inside picture 1 */
+.cat3-pic1 > h3{
+    text-align: center;
+    margin-top: 30%;
+    color: black;
+    background: white;
+    opacity: 0.7;
+    padding: 10px;
+}
+.cat3-pic1:hover{
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+
+/* CATEGORY 3 PICTURE 2 */
+/* This is the code for the picture 2 inside category 3 */
+.cat3-pic2{
+    grid-area: cat3-pic2;
+    background: url('../images/evo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    transition: ease-in-out 0.5s;
+    box-shadow: 2px 2px 15px black;
+}
+/* This is the code for the text inside picture 1 */
+.cat3-pic2 > h3{
+    text-align: center;
+    margin-top: 35%;
+    color: black;
+    background: white;
+    opacity: 0.7;
+    padding: 10px;
+}
+.cat3-pic2:hover{
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+
+/* CATEGORY 3 PICTURE 3 */
+/* This is the code for the picture 3 inside category 3 */
+.cat3-pic3{
+    grid-area: cat3-pic3;
+    background: url('../images/rx7.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    transition: ease-in-out 0.5s;
+    box-shadow: 2px 2px 15px black;
+}
+/* This is the code for the text inside picture 3 */
+.cat3-pic3 > h3{
+    text-align: center;
+    margin-top: 30%;
+    color: black;
+    background: white;
+    opacity: 0.7;
+    padding: 10px;
+}
+.cat3-pic3:hover{
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+
+/* CATEGORY 3 PICTURE 4 */
+/* This is the code for the picture 4 inside category 3 */
+.cat3-pic4{
+    grid-area: cat3-pic4;
+    margin-top: 50px;
+    background: url('../images/eclipse.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    transition: ease-in-out 0.5s;
+    box-shadow: 2px 2px 15px black;
+}
+/* This is the code for the text inside picture 4 */
+.cat3-pic4 > h3{
+    text-align: center;
+    margin-top: 30%;
+    color: black;
+    background: white;
+    opacity: 0.7;
+    padding: 10px;
+}
+.cat3-pic4:hover{
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+
+
+/* HIRE A CAR */
+/* This is the code for the HIRE box */
+.hire-box{
+    grid-area: hire-box;
+    box-shadow: 2px 2px 10px black;
+    background: rgb(236, 236, 236);
+    height: 300px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/* This is the code for the sub box inside the hire box */
+.sub-box1{
+    margin-left: 35%;
+    height: 300px;
+    width: 45%;
+    font-family: 'Raleway', sans-serif;
+    float: left;
+}
+
+/* Input inside the sub box1 */
+.sub-box1 > form > input{
+    margin-left: 10%;
+}
+
+/* Button inside the sub box1 */
+.sub-box1 > form > button{
+    border: 1px solid rgb(14, 255, 14);
+    background: rgb(14, 255, 14);
+    padding: 10px;
+    margin-left: 20%;
+}
+
+/* FOOTER */
+/* This is the code for the footer */
+.footer{
+    grid-area: footer;
+    background: black;
+    padding: 5px;
+    text-align: center;
+    color: aqua;
+    letter-spacing: 3px;
+}
+
