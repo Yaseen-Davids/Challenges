@@ -1,47 +1,51 @@
+body{
+    margin: 0;
+}
+
 /* General setup */
 /* Remember to always comment*/
 
 * {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0 auto;
-  min-width: 1000px;
-  max-width: 1400px;
-}
-
-/* Layout */
-
-section {
-  float: left;
-  width: 50%;
-}
-
-aside {
-  float: right;
-  width: 30%;
-}
-
-nav {
-  float: left;
-  width: 20%;
-}
-
-footer {
-  clear: both;
-}
-
-header, section, aside, nav, footer {
-  padding: 20px;
-}
-
-/* header and footer */
-
-header, footer {
-  border-top: 5px solid #a66;
-  border-bottom: 5px solid #a66;
-}
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: right;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid $mainThemeColor;
+    border-bottom: 5px solid $mainThemeColor;
+  }
 
 /* WRITE YOUR CODE BELOW HERE */
 
@@ -80,19 +84,20 @@ header{
 
 .home_bar:link, .find_bar:link, .staff_bar:link, .pros_bar:link, .courses_bar:link, .media_bar:link{
   text-decoration: none;
-  color: white;
+  color: $navLinkColor;
 }
 
 .home_bar:visited, .find_bar:visited, .staff_bar:visited, .pros_bar:visited, .courses_bar:visited, .media_bar:visited{
-  color: white;
+  color: $navLinkColor;
 }
 
 .home_bar:hover, .find_bar:hover, .staff_bar:hover, .pros_bar:hover, .courses_bar:hover, .media_bar:hover{
-  background-color: white;
+  background-color: $navLinkColor;
   color: black;
 }
 
 .home_bar:active, .find_bar:active, .staff_bar:active, .pros_bar:active, .courses_bar:active, .media_bar:active{
+text-decoration: underline;
 }
 /* NAVIGATION BAR SETTINGS END */
 
@@ -104,9 +109,8 @@ body{
 footer{
   font-size: 25px;
   text-align: center;
-  /* background: linear-gradient(white, grey) */
   font-family: Castellar Regular;
-  background: linear-gradient(white, #a66);
+  background: linear-gradient(white, $mainThemeColor);
 }
 
 /* IMAGE CODE FOR COLLEGE IMAGE */
@@ -142,32 +146,42 @@ h2{
 aside{
   margin-top: 50px;
   margin-right: 50px;
-  border: 2px solid #114B5F;
-  box-shadow: 5px 10px #114B5F;
+  border: 2px solid $borderColor;
+  box-shadow: 5px 10px $borderColor;
+  &:link{
+    color: $linkColor;
+  }
+  &:visited{
+    color: $linkColor;
+  }
+  &:hover{
+    color: #69140E;
+    text-decoration: none;
+  }
+  &:active{
+    padding: 5px;
+    background-color: $linkColor;
+  }
 }
 
 section p{
   text-indent: 20px;
+  &:link{
+    color: $linkColor;
+  }
+  &:visited{
+    color: $linkColor;
+  }
+  &:hover{
+    color: #69140E;
+    text-decoration: none;
+  }
+  &:active{
+    padding: 5px;
+    background-color: $linkColor;
+  }
 }
 
-/* SECTION SETTINGS START */
-section a:link, aside a:link{
-  color: red;
-}
-
-section a:visited, aside a:visited{
-  color: red;
-}
-
-section a:hover, aside a:hover{
-  color: #69140E;
-  text-decoration: none;
-}
-
-section a:active, aside a:active{
-  padding: 5px;
-  background-color: red;
-}
 /* SECTION SETTINGS END */
 
 /* EXTERNAL LINK ICON */
@@ -180,3 +194,5 @@ li{
   list-style: none;
   list-style-type: square;
 }
+
+@import 'variables';
