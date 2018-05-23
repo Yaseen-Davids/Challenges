@@ -1,0 +1,62 @@
+@mixin backgroundImg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin categoryPicAnimation{
+    transition: ease-in-out 0.5s;
+    box-shadow: 2px 2px 15px black;
+}
+
+@mixin imgHoverAnimation{
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+
+@mixin leftRightTextImg{
+    text-align: center;
+    margin-top: 30%;
+    color: black;
+    background: white;
+    opacity: 0.7;
+    padding: 10px;
+}
+
+@mixin centerTextImg{
+    text-align: center;
+    margin-top: 35%;
+    color: black;
+    background: white;
+    opacity: 0.7;
+    padding: 10px;
+}
+
+@mixin categoryHeader{
+    text-align: center;
+    color: white;
+    font-size: 1.25em;
+    background: black;
+    box-shadow: 2px 2px 15px #6d6d6d;
+    margin-top: 20px;
+}
+
+@mixin textOnImgLR{
+    h3{
+        @include leftRightTextImg;
+    }
+
+    &:hover{
+        @include imgHoverAnimation;
+    }
+}
+
+@mixin textOnImgC{
+    h3{
+        @include centerTextImg;
+    }
+
+    &:hover{
+        @include imgHoverAnimation;
+    }
+}
