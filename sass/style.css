@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'home_section home_section home_section';
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mainHeader {
+  grid-area: home_section;
+  height: 100vh;
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(to right, #7F7FD5, #86A8E7, #91EAE4);
+  color: white;
+}
+
+.mainHeader h1 {
+  font-size: 5em;
+  margin-left: 10%;
+  margin-top: 5%;
+  border-bottom: 2px solid white;
+  width: 34%;
+}
+
+.mainHeader h3 {
+  margin-left: 12%;
+  margin-top: 2%;
+  font-size: 2em;
+}
+
+.mainHeader .navbar {
+  background: white;
+  padding: 20px;
+  position: sticky;
+  top: 100vh;
+  text-align: center;
+}
+
+.mainHeader .navbar a {
+  color: #7F7FD5;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 1.5em;
+  transition: all ease-out 0.3s;
+  border-bottom: 1px solid transparent;
+}
+
+.mainHeader .navbar a:hover {
+  color: blue;
+  border-color: blue;
+}
+/*# sourceMappingURL=style.css.map */

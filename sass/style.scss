@@ -1,0 +1,61 @@
+// This is my imports
+@import 'variables';
+@import 'mixins';
+
+// ######################################################################################
+
+// This is the SASS stylesheet
+*{
+    margin: 0;
+}
+
+// This is the grid container
+.grid-container{
+    display: grid;
+    grid-template-areas: 'home_section home_section home_section';
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+// This is the main header
+.mainHeader{
+    grid-area: home_section;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(to right, #7F7FD5, #86A8E7, #91EAE4);
+    color: white;
+    
+    h1{
+        font-size: 5em;
+        margin-left: 10%;
+        margin-top: 5%;
+        border-bottom: 2px solid white;
+        width: 34%;
+    }
+
+    h3{
+        margin-left: 12%;
+        margin-top: 2%;
+        font-size: 2em;
+    }
+    .navbar{
+        background: white;
+        padding: 20px;
+        position: sticky;
+        top: 100vh;
+        text-align: center;
+
+        a{
+            color: #7F7FD5;
+            text-decoration: none;
+            margin-left: 40px;
+            font-size: 1.5em;
+            transition: all ease-out 0.3s;
+            border-bottom: 1px solid transparent;
+
+            &:hover{
+                color: $navHover;
+                border-color: $navHover;
+            }
+        }
+    }
+}
