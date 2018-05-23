@@ -1,0 +1,24 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+.c{
+    font-size: large;
+    margin: 70px;
+}
+.g{
+    color: #a4a4a5;
+}
+
+.theHead{
+    h1{
+        color: rgb(0, 60, 255);
+    }
+}
+
+a{
+    color: rgb(0, 89, 255);
+    &:hover{
+        color: rgb(0, 4, 255);
+        text-decoration: none;
+    }
+}

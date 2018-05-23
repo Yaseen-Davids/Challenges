@@ -1,0 +1,26 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+.c {
+  font-size: large;
+  margin: 70px;
+}
+
+.g {
+  color: #a4a4a5;
+}
+
+.theHead h1 {
+  color: #003cff;
+}
+
+a {
+  color: #0059ff;
+}
+
+a:hover {
+  color: #0004ff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
