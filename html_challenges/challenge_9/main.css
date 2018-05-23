@@ -1,0 +1,77 @@
+body{
+  background-color: #050d75;
+}
+
+body, h1{
+  color: white;
+  text-align: center;
+}
+
+.pass{
+  margin-left: -19px;
+}
+
+.name{
+  margin-left: 135px;
+}
+
+.home_address{
+  margin-left: 78px;
+}
+
+.drop_box{
+  margin-left: -12px;
+}
+
+.zip_code{
+  margin-left: -20px;
+}
+
+.e_mail{
+  margin-left: 133px;
+}
+
+.s_ex{
+  margin-left: 50px;
+}
+
+.pic_1{
+  position: absolute;
+  top: 50px;
+  right: 50px
+}
+
+.pic_2{
+  position: absolute;
+  top: 200px;
+  left: 180px;
+}
+
+.lang{
+  margin-left: -25px;
+}
+
+.stretch-input{
+  width: 300px;
+}
+
+.box_about{
+  margin-left: 170px;
+}
+
+.move_para{
+  position: absolute;
+  top: 463px;
+  left: 558px;
+}
+
+.button1{
+  position: absolute;
+  top: 620px;
+  left: 730px;
+}
+
+.check_me{
+  margin-top: 10px;
+  margin-left: 150px;
+}

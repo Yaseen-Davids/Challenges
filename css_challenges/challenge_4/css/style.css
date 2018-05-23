@@ -1,0 +1,50 @@
+/* ALL BOX SETTING */
+#box1, #box2, #box3, #box4{
+  float: left;
+  height: 200px;
+  width: 200px;
+}
+
+/* BACKGROUND COLORS FOR BLOCKS */
+#box1{
+  background-color: red;
+}
+#box2{
+  background-color: green;
+}
+#box3{
+  background-color: blue;
+}
+#box4{
+  background-color: yellow;
+}
+
+/* IF YOU OVER HOVER BOX BACKGROUND COLOR CHANGES */
+#box1:hover{
+  background-color: yellow;
+}
+#box2:hover{
+  background-color: purple;
+}
+#box3:hover{
+  background-color: grey;
+  width: 600px;
+}
+#box4:hover{
+  background-color: red;
+  width: 50px;
+}
+
+/* IF CLICKED CHANGE BACKGROUND COLOR */
+#box1:active{
+  background-color: #492222;
+}
+#box2:active{
+  background-color: #17cfd8;
+}
+#box3:active{
+  background-color: #d60cb1;
+}
+#box4:active{
+  background-color: #4be504;
+}

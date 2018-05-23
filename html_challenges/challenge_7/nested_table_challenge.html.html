@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nested Tables</title>
+    <style>
+    div.c{
+      text-align: center;
+    }
+    table, td, tr{
+      border: 1px solid black;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="c">
+      <h2>The following Nested Table consists of table tags inside table tags:</h2>
+      <center><table>
+    <tr>
+        <td> 1 </td>
+        <td> 2 </td>
+      </tr>
+    <tr>
+        <td> 3 </td>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td bgcolor='#cae212'> 4 </td>
+                                <td bgcolor='#cae212'> 5 </td>
+                              </tr>
+                            <tr>
+                                <td bgcolor='#cae212'> 7 </td>
+                                <td bgcolor='#cae212'> 8 </td>
+                              </tr>
+                            </table>
+                        </td>
+                    <td bgcolor='#e26512'> 6 </td>
+                  </tr>
+                <tr>
+                    <td bgcolor='#e26512'> 9 </td>
+                    <td bgcolor='#e26512'> 10 </td>
+                  </tr>
+                </table>
+            </td>
+        </tr>
+    </table></center>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="c">
+      <h2>The following Nested Table consists of one table with the use 'colspan' and 'rowspan' tags:</h2>
+      <center><table>
+        <tr>
+          <td> 1 </td>
+          <td COLSPAN=3> 2 </td>
+        </tr>
+        <tr>
+          <td ROWSPAN=3> 3 </td>
+          <td bgcolor='#cae212'> 4 </td>
+          <td bgcolor='#cae212'> 5 </td>
+          <td ROWSPAN=2 bgcolor='#e26512'> 6 </td>
+        </tr>
+        <tr>
+          <td bgcolor='#cae212'> 7 </td>
+          <td bgcolor='#cae212'> 8 </td>
+        </tr>
+        <tr>
+          <td COLSPAN=2 bgcolor='#e26512'> 9 </td>
+          <td bgcolor='#e26512'> 10 </td>
+        </tr>
+      </table></center>
+    </div>
+  </body>
+</html>

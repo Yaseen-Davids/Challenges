@@ -1,0 +1,75 @@
+body{
+  background-color: #e2e2e2;
+}
+
+h1{
+  text-align: center;
+  background-color: blue;
+  color: white;
+  padding: 15px;
+  max-width: 99%;
+  margin-top: 0;
+  box-shadow: 5px 10px 20px #032bbc;
+}
+
+/* THE BOX THAT CONTAINS THE SPEECH BUBBLE */
+#box{
+  margin-top: 50px;
+  border: 1px solid #edeeef;
+  background-color: #edeeef;
+  max-width: 350px;
+  padding: 40px;
+  box-shadow: 5px 10px 20px #888888;
+  display: block;
+}
+
+/* SPEECH BUBBLE 1 */
+#speech-bubble{
+  border: 1px solid #00aabb;
+  height: 120px;
+  width: 160px;
+  border-radius: 10px;
+  background-color: #00aabb;
+}
+
+/* SPEECH BUBBLE 1 ARROW IN THE LEFT DIRECTION */
+.bubble-arrow {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #00aabb;
+  position: relative;
+  margin-left: -180px;
+  margin-top: 12px;
+}
+
+/* SPEECH BUBBLE 2 */
+#speech-bubble_r{
+  border: 1px solid red;
+  height: 120px;
+  width: 160px;
+  border-radius: 10px;
+  background-color: red;
+}
+
+/* SPEECH BUBBLE 1 ARROW IN THE RIGHT DIRECTION */
+.bubble-arrow_r {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid red;
+  position: relative;
+  margin-left: 160px;
+  margin-top: 12px;
+}
+
+/* TEXT INSIDE THE SPEECH BUBBLES */
+.text{
+  position: absolute;
+  margin-top: -22px;
+  margin-left: -52px;
+  color: white;
+  font-size: 18px;
+}

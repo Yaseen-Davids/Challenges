@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+  </head>
+  <body>
+    <div>
+      <h1><u>Registration Form</u></h1>
+    </div>
+    <div class="pic_1">
+      <img src="./images/form.png">
+    </div>
+    <div class="pic_2">
+      <img src="./images/form2.png">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+      <form>
+        User Id: &nbsp <input type="text" name="User Id" placeholder="    required" minlength="5" maxlength="12" required>
+        <br>
+        <br>
+        <div class="pass">
+          Password: &nbsp <input type="password" name="Pass" placeholder="    required" minlength="7" maxlength="12" required>
+        </div>
+        <br>
+        <div class="name">
+          Name: &nbsp <input type="text" name="Name" class="stretch-input" placeholder="    required" pattern="[A-Za-z]+"  required>
+        </div>
+        <br>
+        <div class="home_address">
+          Home Address: &nbsp <input type="text" name="Email" class="stretch-input" placeholder="    optional">
+        </div>
+        <div class="drop_box">
+          <p>Country: &nbsp
+            <select required>
+              <option value="" selected="selected" disabled="disabled">(Please select a country)</option>
+              <option value="Barcelona">Barcelona</option>
+              <option value="Brazil">Brazil</option>
+              <option value="England">England</option>
+              <option value="Europe">Europe</option>
+              <option value="Japan">Japan</option>
+              <option value="North America">North America</option>
+              <option value="Russia">Russia</option>
+              <option value="South Africa">South Africa</option>
+              <option value="South America">South America</option>
+            </select>
+        </div>
+        <div class="zip_code">
+          Zip Code: &nbsp <input type="text" name="Zip Code" pattern="[0-9]+" placeholder="    required" required>
+        </div>
+        <br>
+        <div class="e_mail">
+          Email: &nbsp <input type="email" name="Email" class="stretch-input" placeholder="    required" required>
+        </div>
+        <br>
+        <div class="s_ex">
+          Sex: &nbsp
+          <input type="radio" name="sex" required>Male &nbsp&nbsp&nbsp
+          <input type="radio" name="sex" required>Female &nbsp&nbsp&nbsp
+          <input type="radio" name="sex" required>Other
+        </div>
+        <br>
+        <div class="lang">
+          Language: &nbsp <input type="radio" name="english" required>English &nbsp&nbsp
+          <input type="radio" name="english" required>Non English
+        </div>
+        <br>
+        <div>
+          <p class="move_para">About:</p>
+          &nbsp <textarea cols="40" rows="6" placeholder=" optional" class="box_about"></textarea>
+        </div>
+        <div>
+          <input type="checkbox" name="checkbox_2" required class="check_me">&nbsp I accept the Terms and Conditions
+        </div>
+        <input type="submit" name="submit" value="Submit" class="button1">
+        <br>
+        <br>
+        <br>
+        <p></p>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
+h1{
+  text-align: center;
+  font-family: Times New Roman;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 40px;
+}
+
+header{
+  background-color: #05b2dc;
+  max-width: 99%;
+  padding: 14px;
+  color: white;
+}
+
+/* MAIN BOX THAT CONTAINS EVERYTHING */
+.main_box{
+  max-width: 99%;
+}
+
+/* BOX 1,2 BOX SETTINGS */
+#box1, #box2{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  max-width: 45%;
+  border: 1px solid white;
+}
+
+/* BOX 1 SETTING */
+#box1{
+  float: left;
+  font-family: 	Arial Verdana;
+  font-family: Times New Roman;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+/* BOX 2 SETTINGS */
+#box2{
+  float: right;
+  font-family: Tahoma;
+  font-family: Verdana;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2{
+  font-size: 29px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+p{
+  font-size: 18px;
+  text-indent: 20px;
+}
+
+/* IF BOX CLICKED THEN CHANGE FONT */
+#box1:active{
+  font-family: 	Arial Verdana;
+}
+#box2:active{
+  font-family: 	Arial Verdana;
+}
+
+/* TEXT THAT EXPLAINS WHAT TO DO */
+.clicker{
+  font-style: italic;
+  color: grey;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  width: 96%;
+  max-width: 99%;
+  background-color: #05b2dc;
+  padding: 20px;
+  font-size: 23px;
+}
+
+/* FOOTER LINK SETTINGS */
+a:link{
+  text-decoration: none;
+  color: white;
+}
+a:visited{
+  color: white;
+}
+a:hover{
+  text-decoration: underline;
+}

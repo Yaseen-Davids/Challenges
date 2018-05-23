@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+  </head>
+  <body>
+    <h2>Coffee Shop Survey.</h2>
+    <h4>Please take the time to complete this survey on our services. Thank You</h4>
+    <div class="IMG">
+      <img src="./images/coffee.jpg">
+    </div>
+    <div class="img_2">
+      <img src="./images/coffee2.png">
+    </div>
+    <br>
+    <br>
+    <form action="">
+      First Name:
+      <input type="text" name="Name" placeholder="First Name" required>
+      &nbsp <!-- This is a non-breaking space  -->
+      Second Name:
+      <input type="text" name="Surname" placeholder="Second Name" required>
+      <br>
+      <br>
+      Phone Number:
+      <input type="tel" name="Phone Number" placeholder="Phone Number">&nbsp<em>*optional</em>
+      <br>
+      <br>
+      Email:
+      <input type="email" name="Email" placeholder="Email Address" required>
+      <br>
+      <br>
+      Current Address:
+      <input type="Address" name="Address" placeholder="Home Address" required>
+      <br>
+      <br>
+      Password:
+      <input type="password" name="Password" placeholder="Password" required>
+      <br>
+      <br>
+      <p1>Gender:</p1>
+      <select required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <br>
+      <br>
+      Date of Birth:
+      <input type="date" name="date" required>
+      <br>
+      <br>
+      <br>
+      <h3 class="BIG"><u>Questionaire:</u></h3>
+      <div class="TEXT_TEXT">
+        <ol><li>How often do you visit coffee shops?</li>
+          <br>
+          <input type="radio" name="Choice" class="left_w">Weekly
+          <input type="radio" name="Choice" class="left_s">Daily
+          <br>
+          <br>
+          <input type="radio" name="Choice" class="left_w">Monthly
+          <input type="radio" name="Choice" class="left_o">Once a Month
+          <br>
+          <br>
+          <br>
+          <li>What is your favorite coffee shop? Where is it located?
+            <p><textarea rows="2" cols="80"></textarea></p></li>
+            <br>
+            <li>What do you typically order to drink?
+              <p><textarea rows="2" cols="80"></textarea></p></li>
+              <br>
+              <li>Do you prefer large, national chain coffee shops or small, privately owned coffee shops?
+                <br>
+                <br>
+                <input type="radio" name="coffeeshops" class="left_w" required>National Chain
+                <input type="radio" name="coffeeshops" class="left_p" required>Private, Non-Chain</li>
+        </ol>
+        <br>
+        <br>
+        <input type="submit" name="submit" value="Submit" class="button_submit">
+        <br>
+        <br>
+        <br>
+        <input type="reset" name="Reset" value="Reset Fields" class="button_reset">
+      </div>
+  </body>
+</html>

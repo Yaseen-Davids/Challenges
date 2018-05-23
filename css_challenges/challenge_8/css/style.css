@@ -1,0 +1,141 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+/* THIS IS THE MAIN BOX THAT CONTAINS EVERYTHING */
+#main_box{
+  border: 1px solid #dbdbdb;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  height: 500px;
+  box-shadow: 5px 10px 15px;
+  background-color: #dbdbdb;
+  border-radius: 6px;
+}
+
+/* THIS IS THE BOX INSIDE THE MAIN BOX (SUB BOX) */
+#box{
+  border: 1px solid #fcfcfc;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-height: 99%;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+}
+
+h1{
+  margin-left: 100px;
+}
+
+/* SETTINGS FOR THE DATE OF THE SALE */
+.date{
+  text-decoration: underline;
+}
+
+/* THIS IS THE CODE FOR THE SLOGAN OF THE WEBSITE */
+.solg{
+  margin-left: 110px;
+  margin-top: -22px;
+  color: #878787;
+}
+
+/* CODE FOR PARAGRAPH 1 */
+.para_1{
+  margin-left: 50px;
+  font-size: 22px;
+}
+
+/* CODE FOR PARAGRAPH 2 */
+.para_2{
+  text-align: center;
+}
+
+/* SAVE BUTTON SETTING */
+.block{
+  text-align: center;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 30px;
+  width: 25%;
+  font-family: 'Anton', sans-serif;
+}
+
+/* THIS IS THE CODE FOR THE RIBBON */
+.ribbon{
+  border: 1px solid black;
+  position: absolute;
+  background-color: red;
+  font-size: 45px;
+  width: 450px;
+  text-align: center;
+  transform: rotate(30deg);
+  right: -50px;
+  top: 60px;
+}
+
+/* CHANGES THE COLOR OF THE SELECTED TEXT TO RED */
+.col_r{
+  color: red;
+  font-size: 45px;
+}
+
+/* ALL LINKS SETTINGS */
+a:link{
+  text-decoration: none;
+  color: red;
+}
+a:visited{
+  color: red;
+}
+a:hover{
+  text-decoration: underline;
+}
+a:active{
+  text-decoration: underline;
+}
+
+/* THE IMAGE SAVE TAG */
+.img_sale{
+  position: absolute;
+  top: 350px;
+  right: 40px;
+}
+
+/* SAVE BUTTON LINK SETTINGS */
+.save_but:link{
+  color: white;
+  text-decoration: none;
+}
+.save_but:visited{
+  color: white;
+}
+.save_but:hover{
+  color: red;
+}
+.save_but:active{
+  color: red;
+}
+
+/* TERMS AND CONDITIONS CODE!!!!!!!!!!!!!! */
+#head2, #headH2{
+  text-align: center;
+}
+
+#para_tc{
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#footer_tc{
+  background-color: black;
+  color: red;
+  padding: 1px;
+  text-align: center;
+  font-size: 21px;
+}

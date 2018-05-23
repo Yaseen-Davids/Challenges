@@ -1,0 +1,63 @@
+body{
+  background-color: #1bba23;
+}
+
+/* HEADING 1 */
+h1{
+  text-align: center;
+}
+
+/* HEADING 2 */
+h2{
+  color: red;
+}
+
+/* HEADING 3 */
+h3{
+  color: white;
+}
+
+/* HEADING 4 */
+h4{
+  color: blue;
+}
+
+/* HEADING 5 */
+h5{
+  color: yellow;
+}
+
+/* HEADING 6 */
+h6{
+  color: purple;
+}
+
+/* PARAGRAPH 1 */
+p1{
+  font-style: oblique;
+}
+
+/* PARAGRAPH 2 */
+p2{
+  font-style: normal;
+}
+
+/* PARAGRAPH 3 */
+p3{
+  font-style: italic;
+}
+
+/* PARAGRAPH 4 */
+p4{
+  font-style: oblique;
+}
+
+/* PARAGRAPH 6 */
+p5{
+  font-style: normal;
+}
+
+/* PARAGRAPH 6 */
+p6{
+  font-style: italic;
+}

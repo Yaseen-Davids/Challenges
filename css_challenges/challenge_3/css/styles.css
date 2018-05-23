@@ -1,0 +1,147 @@
+/* General setup */
+/* Remember to always comment*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ccc;
+}
+
+article {
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative;
+}
+
+address {
+  position: absolute;
+  bottom: 20mm;
+  right: 20mm;
+}
+
+h1 {
+  position: absolute;
+  top: 12mm;
+  left: 20mm;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* Write your CSS below here */
+body{
+  background: linear-gradient(to right, #333333, #dd1818, #333333);
+  z-index: -10;
+}
+
+article{
+  border: 1px solid black;
+  background-color: white;
+}
+
+h1{
+  font-size: 30px;
+}
+
+/* BOX FOR HEADER */
+#h_box{
+  background: url('../images/codes.jpg');
+  background-size: auto 250px;
+  border: 1px solid transparent;
+  width: 100%;
+  height: 250px;
+  border-top: 1mm solid red;
+  box-shadow: 0px 10px 18px #888888;
+}
+
+/* BOX FOR BOTTOM/FOOTER */
+#b_box{
+  border: 1px solid transparent;
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  bottom: 0;
+  background-image: url('../images/bottom-image.png'), linear-gradient(white, #939393);
+  background-repeat: no-repeat;
+  background-size: 794px 120px;
+  background-position: bottom;
+  border-bottom: 1mm solid red;
+}
+
+/* LAPTOP LOGO */
+#l_box{
+  border: 1px solid transparent;
+  width: 400px;
+  height: 200px;
+  background: url('../images/laptop-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 32px;
+  margin-top: 50px;
+}
+
+/* FOOTER COMPANY NAME */
+.company-name{
+  font-size: 26px;
+  color: #dd1818;
+  font-weight: bold;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* COOLBOX CSS !!!!!!!! */
+/* MAIN BOX FOR COOLERBOX */
+#coolbox-box{
+  border: 1px solid transparent;
+  width: 500px;
+  height: 500px;
+  background-color: transparent ;
+  margin-top: 30px;
+  margin-left: 32%;
+}
+
+/* THIS IS THE HEADING OF THE PAGE INSIDE A BOX */
+.header-box{
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #78ffd6;
+}
+
+/* THIS IS THE MAIN CODE FOR THE COOLBOX */
+#coolbox{
+  border: 1px solid black;
+  width: 200px;
+  height: 60px;
+  margin-left: 28%;
+  border-radius: 6px;
+  background-color: white;
+  margin-top: 30%;
+  background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(0,0,0,0.1)30%,rgba(0,0,0,0.3)100%)
+              no-repeat center 0, red;
+  box-shadow: inset 2.5px 2.5px 2px rgba(255,255,255,0.5),
+              inset -2.5px -2.5px 4px rgba(0,0,0,0.4),
+              -0.3px -0.3px 4px rgba(0,0,0,0.5),
+              2px 2px 10px rgba(0,0,0,0.6);
+}
+
+/* THIS IS THE CODE FOR THE TEXT INSIDE THE COOLBOX */
+.coolbox-text{
+  font-size: 1.125rem; /* TO CALCULATE REMS, DIVIDE THE FONT PIXEL SIZE BY 16 */
+  color: #78ffd6;
+  text-align: center;
+  text-shadow: 2px 2px 4px #ffffff;
+}
