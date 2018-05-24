@@ -12,8 +12,10 @@
 // This is the grid container
 .grid-container{
     display: grid;
-    grid-template-areas: 'home_section home_section home_section';
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'home_section home_section home_section'
+    'sidebar mainContent leftbar';
+    grid-template-columns: 20% 1fr 20%;
+    grid-gap: 20px;
 }
 
 // This is the main header
@@ -41,7 +43,6 @@
         transition: linear 1s;
         border-bottom: 2px solid white;
     }
-
     .inviText{
         color: transparent;
     }
@@ -52,6 +53,7 @@
         position: sticky;
         top: 100vh;
         text-align: center;
+        z-index: 100;
 
         a{
             color: #7F7FD5;
@@ -67,4 +69,169 @@
             }
         }
     }
+}
+
+#side_bar{
+    grid-area: sidebar;
+    border: $borderSettings;
+    margin-left: 100px;
+}
+
+#main_content{
+    margin-top: 100px;
+    grid-area: mainContent;
+    height: 100%;
+    border: $borderSettings;
+    display: grid;
+    grid-template-areas: 'box1Pic box2Pic'
+    'mainInfoBox mainInfoBox'
+    'box3Pic box4Pic'
+    'box3Info box4Info'
+    'box5Pic box6Pic'
+    'box5Info box6Info'
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+#mainInfoBox{
+    grid-area: mainInfoBox;
+}
+
+#left_bar{
+    grid-area: leftbar;
+    margin-right: 100px;
+    border: $borderSettings;
+}
+
+#box1Pic{
+    grid-area: box1Pic;
+    border: $borderSettings;
+    @include headerSettings;
+
+    #boxHtmlHead{
+        @include rightImgHeader;
+    }
+    #boxHtmlImg{
+        background: url('../images/html.jpg');
+        @include BackgroundImgSettings;
+        height: 85.5%;
+    }
+}
+
+#box1Info{
+    @include boxInfo;
+    height: 400px;
+    float: left;
+}
+
+#box2Pic{
+    grid-area: box2Pic;
+    border: $borderSettings;
+    @include headerSettings;
+
+    #boxCssHead{
+        @include leftImgHeader;
+    }
+    #boxCssImg{
+        background: url('../images/css.jpg');
+        @include BackgroundImgSettings;
+        height: 85.5%;
+    }
+}
+
+#box2Info{
+    @include boxInfo;
+    height: 400px;
+    float: right;
+}
+
+#box3Pic{
+    grid-area: box3Pic;
+    border: $borderSettings;
+    @include headerSettings;
+
+    #boxGridHead{
+        @include rightImgHeader;
+    }
+    #boxGridImg{
+        background: url('../images/grid.jpg');
+        @include BackgroundImgSettings;
+        height: 85.5%;
+    }
+}
+
+#box3Info{
+    grid-area: box3Info;
+    @include boxInfo;
+    height: 120px;
+}
+
+#box4Pic{
+    grid-area: box4Pic;
+    border: $borderSettings;
+    @include headerSettings;
+
+    #boxRespHead{
+        @include leftImgHeader;
+    }
+    #boxRespImg{
+        background: url('../images/resp.jpg');
+        @include BackgroundImgSettings;
+        height: 85.5%;
+    }
+}
+
+#box4Info{
+    grid-area: box4Info;
+    @include boxInfo;
+    height: 120px;
+}
+
+#box5Pic{
+    grid-area: box5Pic;
+    border: $borderSettings;
+    @include headerSettings;
+
+    #boxSassHead{
+        @include rightImgHeader;
+    }
+    #boxSassImg{
+        background: url('../images/sass.jpg');
+        @include BackgroundImgSettings;
+        height: 85.5%;
+    }
+}
+
+#box5Info{
+    grid-area: box5Info;
+    @include boxInfo;
+    height: 120px;
+}
+
+#box6Pic{
+    grid-area: box6Pic;
+    border: $borderSettings;
+    @include headerSettings;
+
+    #boxJsHead{
+        @include leftImgHeader;
+    }
+    #boxJsImg{
+        background: url('../images/comingsoon.jpg');
+        @include BackgroundImgSettings;
+        height: 85.5%;
+    }
+}
+
+#box6Info{
+    grid-area: box6Info;
+    @include boxInfo;
+    height: 120px;
 }

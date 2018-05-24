@@ -1,0 +1,54 @@
+// This is the mixins stylesheet
+
+//Background image settings
+@mixin BackgroundImgSettings{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// This is the header of the images
+@mixin rightImgHeader{
+    h3{
+        padding: 15px;
+        text-align: center;
+        background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+        color: white;
+        font-size: 1.5em;
+    }
+}
+
+// This is the header of the images
+@mixin leftImgHeader{
+    h3{
+        padding: 15px;
+        text-align: center;
+        background: linear-gradient(to left, #0F2027, #203A43, #2C5364);
+        color: white;
+        font-size: 1.5em;
+    }
+}
+
+@mixin headerSettings{
+    height: 400px;
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin boxInfo{
+    display: none;
+    font-family: 'Raleway', sans-serif;
+    color: blue;
+    ul{
+        line-height: 35px;
+        list-style: none;
+
+        a{
+            color: rgb(0, 89, 255);
+            text-decoration: none;
+
+            &:hover{
+                color: rgb(0, 0, 165);
+            }
+        }
+    }
+}

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./sass/style.css" />
-    <script src="./js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
     
@@ -20,21 +20,144 @@
                 <header>
                     <h1 id="myHeader">Yaseen<span class="inviText">i</span>Davids</h1>
                 </header>
+
                 <div class="header_slogan">
                     <h3 id="mySlogan">Show<span class="inviText">i</span>me<span class="inviText">i</span>the<span class="inviText">i</span>code</h3>
                 </div>
+
                 <div class="socialMedia_box"></div>
                 <div class="navbar">
-                    <a href="#Home">Home</a>
+                    <a href="#Home" onclick="headerSmooth()">Home</a>
                     <a href="#Home">Challenges</a>
                     <a href="#Home">Projects</a>
                     <a href="#CV">Résumé</a>
                 </div>
             </div>
 
+            <div id="main_content">
+
+                <a href="#box1" onclick="box1Info()"><div id="box1Pic">
+                    <div id="boxHtmlHead">
+                        <h3>HTML Challenges</h3>
+                    </div>
+                    <div id="boxHtmlImg"></div>
+                </div></a>
+
+                <a href="#box2" onclick="box2Info()"><div id="box2Pic">
+                    <div id="boxCssHead">
+                        <h3>CSS Challenges</h3>
+                    </div>
+                    <div id="boxCssImg"></div>
+                </div></a>
+
+                <div id="mainInfoBox">
+                    <div id="box1Info">
+                        <h4>HTML Challenges</h4>
+                        <ul>
+                            <a href="#"><li>Heading Paragraph Challenge</li></a>
+                            <a href="#"><li>Paragraph Challenge</li></a>
+                            <a href="#"><li>Lists Textformatting Images Challenge</li></a>
+                            <a href="#"><li>Lists Challenge</li></a>
+                            <a href="#"><li>Article Challenge</li></a>
+                            <a href="#"><li>Tables Challenge</li></a>
+                            <a href="#"><li>Nested Tables Challenge</li></a>
+                            <a href="#"><li>Forms Challenge</li></a>
+                            <a href="#"><li>Form Validation Challenge</li></a>
+                            <a href="#"><li>Hyperlinks Challenge</li></a>
+                            <a href="#"><li>HTML Webpage Challenge</li></a>
+                        </ul>
+                    </div>
+
+                    <div id="box2Info">
+                        <h4>CSS Challenges</h4>
+                        <ul>
+                            <a href="#"><li>Fonts Colors Challenge</li></a>
+                            <a href="#"><li>College Website Challenge</li></a>
+                            <a href="#"><li>Letter Challenge</li></a>
+                            <a href="#"><li>Float Challenge</li></a>
+                            <a href="#"><li>Font Challenge</li></a>
+                            <a href="#"><li>My Form Challenge</li></a>
+                            <a href="#"><li>Speech Bubble Challenge</li></a>
+                            <a href="#"><li>Sale Banner Challenge</li></a>
+                            <a href="#"><li>Emoji Challenge</li></a>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="#box3" onclick="box3Info()"><div id="box3Pic">
+                    <div id="boxGridHead">
+                        <h3>CSS Grids Challenges</h3>
+                    </div>
+                    <div id="boxGridImg"></div>
+                </div></a>
+
+                <div id="box3Info">
+                    <h4>CSS Grid Challenges</h4>
+                    <ul>
+                        <a href="#"><li>Challenge 1</li></a>
+                        <a href="#"><li>Challenge 2</li></a>
+                    </ul>
+                </div>
+
+                <a href="#box4" onclick="box4Info()"><div id="box4Pic">
+                    <div id="boxRespHead">
+                        <h3>Responsiveness Challenges</h3>
+                    </div>
+                    <div id="boxRespImg"></div>
+                </div></a>
+
+                <div id="box4Info">
+                    <h4>Responsiveness Challenges</h4>
+                    <ul>
+                        <a href="#"><li>Responsive Layout 1</li></a>
+                        <a href="#"><li>Responsive Layout 2</li></a>
+                        <a href="#"><li>Responsive Layout 3</li></a>
+                    </ul>
+                </div>
+
+                <a href="#box5" onclick="box5Info()"><div id="box5Pic">
+                    <div id="boxSassHead">
+                        <h3>SASS Challenges</h3>
+                    </div>
+                    <div id="boxSassImg"></div>
+                </div></a>
+
+                <div id="box5Info">
+                    <h4>SASS Challenges</h4>
+                    <ul>
+                        <a href="#"><li>SASS CSS</li></a>
+                        <a href="#"><li>SASS CSS Grid</li></a>
+                        <a href="#"><li>SASS HTML</li></a>
+                    </ul>
+                </div>
+
+                <a href="#box6" onclick="box6Info()"><div id="box6Pic">
+                    <div id="boxJsHead">
+                        <h3>Javascript Challenges</h3>
+                    </div>
+                    <div id="boxJsImg"></div>
+                </div></a>
+
+                <div id="box6Info">
+                    <h4>Javascript Challenges</h4>
+                    <ul>
+                        <a href="#"><li>SASS CSS</li></a>
+                        <a href="#"><li>SASS CSS Grid</li></a>
+                        <a href="#"><li>SASS HTML</li></a>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div id="side_bar"></div>
+
+            <div id="left_bar"></div>
+
         </div>
         
     </div>
+
+    <script src="./js/script.js"></script>
 
 </body>
 </html>
