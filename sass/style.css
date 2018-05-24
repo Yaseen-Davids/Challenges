@@ -21,13 +21,21 @@
   margin-left: 10%;
   margin-top: 5%;
   border-bottom: 2px solid white;
-  width: 34%;
+  width: 0%;
+  transition: linear 1s;
 }
 
 .mainHeader h3 {
   margin-left: 12%;
   margin-top: 2%;
   font-size: 2em;
+  width: 0%;
+  transition: linear 1s;
+  border-bottom: 2px solid white;
+}
+
+.mainHeader .inviText {
+  color: transparent;
 }
 
 .mainHeader .navbar {
