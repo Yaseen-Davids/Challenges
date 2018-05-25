@@ -35,9 +35,10 @@
 }
 
 @mixin boxInfo{
-    display: none;
+    border: $borderSettings;
     font-family: 'Raleway', sans-serif;
     color: blue;
+    display: none;
     ul{
         line-height: 35px;
         list-style: none;

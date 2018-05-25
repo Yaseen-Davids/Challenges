@@ -64,7 +64,7 @@
 
 #side_bar {
   grid-area: sidebar;
-  border: 1px solid transparent;
+  border: 1px solid black;
   margin-left: 100px;
 }
 
@@ -72,9 +72,9 @@
   margin-top: 100px;
   grid-area: mainContent;
   height: 100%;
-  border: 1px solid transparent;
+  border: 1px solid black;
   display: grid;
-  grid-template-areas: 'box1Pic box2Pic' 'mainInfoBox mainInfoBox' 'box3Pic box4Pic' 'box3Info box4Info' 'box5Pic box6Pic' 'box5Info box6Info';
+  grid-template-areas: 'box1Pic box2Pic' 'box1Info box2Info' 'box3Pic box4Pic' 'box3Info box4Info' 'box5Pic box6Pic' 'box5Info box6Info';
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   padding: 20px;
@@ -85,19 +85,15 @@
   text-decoration: none;
 }
 
-#mainInfoBox {
-  grid-area: mainInfoBox;
-}
-
 #left_bar {
   grid-area: leftbar;
   margin-right: 100px;
-  border: 1px solid transparent;
+  border: 1px solid black;
 }
 
 #box1Pic {
   grid-area: box1Pic;
-  border: 1px solid transparent;
+  border: 1px solid black;
   height: 400px;
   font-family: 'Raleway', sans-serif;
 }
@@ -119,11 +115,11 @@
 }
 
 #box1Info {
-  display: none;
+  border: 1px solid black;
   font-family: 'Raleway', sans-serif;
   color: blue;
+  display: none;
   height: 400px;
-  float: left;
 }
 
 #box1Info ul {
@@ -142,7 +138,7 @@
 
 #box2Pic {
   grid-area: box2Pic;
-  border: 1px solid transparent;
+  border: 1px solid black;
   height: 400px;
   font-family: 'Raleway', sans-serif;
 }
@@ -164,11 +160,11 @@
 }
 
 #box2Info {
-  display: none;
+  border: 1px solid black;
   font-family: 'Raleway', sans-serif;
   color: blue;
+  display: none;
   height: 400px;
-  float: right;
 }
 
 #box2Info ul {
@@ -187,7 +183,7 @@
 
 #box3Pic {
   grid-area: box3Pic;
-  border: 1px solid transparent;
+  border: 1px solid black;
   height: 400px;
   font-family: 'Raleway', sans-serif;
 }
@@ -210,9 +206,10 @@
 
 #box3Info {
   grid-area: box3Info;
-  display: none;
+  border: 1px solid black;
   font-family: 'Raleway', sans-serif;
   color: blue;
+  display: none;
   height: 120px;
 }
 
@@ -232,7 +229,7 @@
 
 #box4Pic {
   grid-area: box4Pic;
-  border: 1px solid transparent;
+  border: 1px solid black;
   height: 400px;
   font-family: 'Raleway', sans-serif;
 }
@@ -255,9 +252,10 @@
 
 #box4Info {
   grid-area: box4Info;
-  display: none;
+  border: 1px solid black;
   font-family: 'Raleway', sans-serif;
   color: blue;
+  display: none;
   height: 120px;
 }
 
@@ -277,7 +275,7 @@
 
 #box5Pic {
   grid-area: box5Pic;
-  border: 1px solid transparent;
+  border: 1px solid black;
   height: 400px;
   font-family: 'Raleway', sans-serif;
 }
@@ -300,9 +298,10 @@
 
 #box5Info {
   grid-area: box5Info;
-  display: none;
+  border: 1px solid black;
   font-family: 'Raleway', sans-serif;
   color: blue;
+  display: none;
   height: 120px;
 }
 
@@ -322,7 +321,7 @@
 
 #box6Pic {
   grid-area: box6Pic;
-  border: 1px solid transparent;
+  border: 1px solid black;
   height: 400px;
   font-family: 'Raleway', sans-serif;
 }
@@ -345,9 +344,10 @@
 
 #box6Info {
   grid-area: box6Info;
-  display: none;
+  border: 1px solid black;
   font-family: 'Raleway', sans-serif;
   color: blue;
+  display: none;
   height: 120px;
 }
 

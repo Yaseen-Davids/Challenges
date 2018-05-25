@@ -84,7 +84,7 @@
     border: $borderSettings;
     display: grid;
     grid-template-areas: 'box1Pic box2Pic'
-    'mainInfoBox mainInfoBox'
+    'box1Info box2Info'
     'box3Pic box4Pic'
     'box3Info box4Info'
     'box5Pic box6Pic'
@@ -98,10 +98,6 @@
         color: white;
         text-decoration: none;
     }
-}
-
-#mainInfoBox{
-    grid-area: mainInfoBox;
 }
 
 #left_bar{
@@ -128,7 +124,6 @@
 #box1Info{
     @include boxInfo;
     height: 400px;
-    float: left;
 }
 
 #box2Pic{
@@ -149,7 +144,6 @@
 #box2Info{
     @include boxInfo;
     height: 400px;
-    float: right;
 }
 
 #box3Pic{
