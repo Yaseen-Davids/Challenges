@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid blue;
+  width: 220px;
+  font-size: 1.5em;
+}
+
+#comment {
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h1 {
+  text-align: center;
+  background-color: #006eff;
+  padding: 15px;
+  color: white;
+}
+
+button {
+  border: none;
+  color: white;
+  background: #006eff;
+  font-size: 1.5em;
+  padding: 10px 20px;
+}
+
+button:hover {
+  background: blue;
+}
+/*# sourceMappingURL=style.css.map */
