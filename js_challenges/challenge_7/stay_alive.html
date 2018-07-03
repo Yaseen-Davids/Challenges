@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Stay Alive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{
+            margin: 0;
+        }
+        #demo{
+            font-size: 2em;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        img{
+            position: absolute;
+            height: 200px;
+            width: 300px;
+            top: 150px;
+            transition: all 1s;
+        }
+        #fuel{
+            position: absolute;
+            top: 0px;
+            left: 200px;
+            text-align: center;
+        }
+        #fuel_wrapper{
+            height: 50px;
+            width: 600px;
+            border: 1px solid green;
+        }
+        #fuel_bar{
+            height: 50px;
+            width: 600px;
+            background: green;
+        }
+        #container{
+            overflow: hidden;
+        }
+        #finish_line{
+            position: absolute;
+            height: 100vh;
+            width: 2px;
+            background: black;
+            left: 1000px;
+        }
+    </style>
+</head>
+<body>
+<!-- <body onmouseover="checkCords()"> -->
+    
+    <div id="container">
+        <div id="finish_line"></div>
+        <p id="demo"></p>
+        <p id="cords"></p>
+        <div id="fuel">
+            <h3 id="changeText">Fuel:</h3>
+            <div id="fuel_wrapper">
+                <div id="fuel_bar"></div>
+            </div>
+        </div>
+        <img id="myCar" src="https://cdn.pixabay.com/photo/2013/07/12/14/47/car-148786_960_720.png">
+        
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+        // function checkCords() {
+        //     var x = event.clientX;
+        //     var y = event.clientY;
+        //     var coords = "X coords: " + x + ", Y coords: " + y;
+        //     document.getElementById("cords").innerHTML = coords;
+        // }
+
+        $(document).ready(function(){
+            alert("Press the spacebar to cross the line before you run out of fuel");
+            let seconds = 10;
+            let speed = 1;
+            document.getElementById("demo").innerHTML = seconds;
+
+            function startLoop() {
+                while(seconds > 0){
+                    
+                    $("#fuel_bar").css('width','-=60px');
+                    seconds--;
+                    if (seconds < 4){
+                        $("#fuel_wrapper").css('border-color','red');
+                        $("#fuel_bar").css('background','red');
+                    }
+                    if (seconds < 10){
+                        document.getElementById("demo").innerHTML = seconds;
+                        break;
+                    }
+                }
+            }
+            setInterval(startLoop,1000);       
+
+            onkeydown = function(event){
+                let moveRight = event.keyCode;
+                if (moveRight == 32){
+                    $("#myCar").animate({left:"+=50px"},speed);  
+                }
+                if (seconds == 0){
+                    $("#changeText").text("YOU RUN OUT OF FUEL!");
+                    $("#changeText").css('color', 'red');
+                    onkeydown = false;
+                }
+            }
+        })
+    
+    </script>
+
+</body>
+</html>
