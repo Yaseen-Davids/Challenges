@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alphabet Soup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <input id="user_word" name="user_word" placeholder="Enter a word or phrase">
+    <button id="Submit">Submit</button>
+    <br>
+    <h3 id="jumbled_word"></h3>
+    <script>
+
+        document.getElementById('Submit').addEventListener('click', AlphabetSoup)
+
+        function AlphabetSoup(str) { 
+            str = document.getElementById("user_word").value;
+
+            var chars = str.split("");
+
+            var sorted = chars.sort();
+
+            document.getElementById("jumbled_word").innerHTML = sorted.join("");
+            
+        }
+                 
+    </script>
+    
+</body>
+</html>
