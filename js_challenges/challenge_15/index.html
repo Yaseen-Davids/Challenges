@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        textarea{
+            outline: none;
+            resize: none;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+
+        <textarea id="text_area" rows="10" cols="50"></textarea>
+        <br>
+        <p>Character count: <span id="char_count_text"></span></p>
+        <br>
+
+    </div>
+
+    <script>
+        
+        let text_area = document.getElementById("text_area");
+
+        text_area.addEventListener("keyup", checkInput)
+
+        function checkInput() {
+            let character = document.getElementById("text_area").value;
+            let char_count_text = document.getElementById("char_count_text");
+
+            char_count_text.innerHTML = character.length;
+
+        }
+
+    </script>
+
+</body>
+</html>
