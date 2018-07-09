@@ -25,43 +25,43 @@
         <br>
         <select id="user_select">
             <option value="Please select a value" disabled="disabled" selected="selected">(Please select a value)</option>
-            <option value="Likes">Likes</option>
-            <option value="Dislikes">Dislikes</option>
+            <option value="likes">Likes</option>
+            <option value="dislikes">Dislikes</option>
         </select>
         <br>
         <br>
         <button id="submit">Submit</button>
         <br>
         <h3 id="character_name"></h3>
-        <h4 id="user_select_output"></h4>
+        <h4 id="character_prop"></h4>
     </div>
 
     <script>
 
         let characters = [
             {
-                firstName: "Harry",
-                lastName: "Potter",
-                likes: ["Hogwarts", "Magic", "Hagrid"],
-                dislikes: ["Voldemort", "Moaning Myrtle", "Dementors"],
+                "firstName": "Harry",
+                "lastName": "Potter",
+                "likes": ["Hogwarts", "Magic", "Hagrid"],
+                "dislikes": ["Voldemort", "Moaning Myrtle", "Dementors"],
             },
             {
-                firstName: "Ron",
-                lastName: "Weasley",
-                likes: ["Food", "Hermione", "Recklessness"],
-                dislikes: ["Spiders", "Prov. Snape", "Studying"],
+                "firstName": "Ron",
+                "lastName": "Weasley",
+                "likes": ["Food", "Hermione", "Recklessness"],
+                "dislikes": ["Spiders", "Prov. Snape", "Studying"],
             },
             {
-                firstName: "Hermione",
-                lastName: "Granger",
-                likes: ["Reading", "Potions", "Studying"],
-                dislikes: ["Monsters", "Prov. Snape", "Scampers"],
+                "firstName": "Hermione",
+                "lastName": "Granger",
+                "likes": ["Reading", "Potions", "Studying"],
+                "dislikes": ["Monsters", "Prov. Snape", "Scampers"],
             },
             {
-                firstName: "Drako",
-                lastName: "Malfoy",
-                likes: ["Bullying", "Lord Voldemont", "Harry Potter"],
-                dislikes: ["Harry", "Losing", "Authority"],
+                "firstName": "Draco",
+                "lastName": "Malfoy",
+                "likes": ["Bullying", "Lord Voldemont", "Harry Potter"],
+                "dislikes": ["Harry", "Losing", "Authority"],
             }
         ];
 
@@ -69,20 +69,42 @@
         document.getElementById("submit").addEventListener('click', lookUp);
         
         function lookUp(firstName, prop){
+
             firstName = document.getElementById('first_name').value;
-            prop = document.getElementById("user_select").value;
+            prop = document.getElementById("user_select").value;   
 
-            var found = characters.find((found) => found[characters.firstName]);
+            if (prop == "Please select a value"){
 
-            if (found) {
-                alert();
-                // console.log(found);
+                character_prop.innerHTML = "Please select a property";
+                character_prop.style.color = "red";
+
+            }
+            
+            else{
+                let character_name = document.getElementById("character_name");       
+                let character_prop = document.getElementById("character_prop");       
+
+                for (let i = 0; i < characters.length; i++){
+
+                    if (characters[i].firstName === firstName){
+                        if (characters[i].hasOwnProperty(prop)){
+                            character_name.innerHTML = characters[i].firstName + " " + characters[i].lastName;
+                            character_prop.innerHTML = characters[i][prop];
+                            character_prop.style.color = "black";
+                            
+                        }
+                        else {
+                            character_prop.innerHTML = "No such property";
+                        }
+                    }
+                }
+
+                return "No such character";
+
             }
 
-        }
 
-        // Change these values to test your function
-        // lookUp("Harry", "likes");
+        }
 
     </script>
 
