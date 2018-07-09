@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Credit Card Mask</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        button{
+            margin-top: 20px;
+            border: none;
+            outline: none;
+            background: rgb(0, 199, 17);
+            color: white;
+            padding: 10px;
+            width: 100px;
+            transition: all 0.5s;
+        }
+
+        button:hover{
+            transition: all 0.5s;
+            width: 120px
+        }
+
+        #show_pass{
+            margin-top: 10px;
+        }
+
+        #passWord{
+            width: 250px;
+            border: 1px solid rgb(0, 199, 17);
+            padding: 10px;
+            font-size: 1em;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="container">
+
+        <h3>Please enter your pin to continue:</h3>
+        <input type="password" id="passWord" name="passWord" placeholder="Enter your Credit Card Number" maxlength="13">
+        <br>
+        <input type="checkbox" id="show_pass" name="show_pass">
+        <label for="show_pass">Show Password</label>
+        <br>
+        <button id="submit">Submit</button>
+        <h3 id="error_msg"></h3>
+
+    </div>
+    
+    <script>
+
+        document.getElementById("submit").addEventListener('click', maskify);
+        let the_error = document.getElementById("error_msg");
+
+        let showPass = document.getElementById("show_pass");
+        showPass.addEventListener('click', showPassword);
+
+        function maskify() {
+
+            let credit_No = document.getElementById("passWord").value;
+
+            if (credit_No.length != 13){
+                the_error.innerHTML = "Not a valid credit card number";
+                the_error.style.color = "red";
+            }
+
+            else if (credit_No.length == 13){
+                the_error.innerHTML = "Valid credit card number";
+                the_error.style.color = "green";
+                document.getElementById("passWord").setAttribute('type', 'text');
+                let lastFour = credit_No.substr(credit_No.length - 4);
+                document.getElementById("passWord").value = "#########" + lastFour;
+            }
+
+        }
+
+        function showPassword() {
+
+            if (showPass.checked == true){
+                document.getElementById("passWord").setAttribute('type', 'text');
+            }
+            else{
+                document.getElementById("passWord").setAttribute('type', 'password');
+            }
+
+        }
+
+    </script>
+</body>
+</html>
