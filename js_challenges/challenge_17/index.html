@@ -117,20 +117,26 @@
 
     <script>
         
+        // Dance moves array
         let danceMoves = ['Nae-Nae', 'Hype', 'Twerk', 'Moonwalk', 'Break Dance', 'Ballroom', 'Ballet', 'Belly Dancing', 'Gangnam Style', 'Macarena'];
 
+        // This randomises the dances
         let randomDance1 = danceMoves[Math.floor(Math.random()*danceMoves.length)];
         let randomDance2 = danceMoves[Math.floor(Math.random()*danceMoves.length)];
         let randomDance3 = danceMoves[Math.floor(Math.random()*danceMoves.length)];
         let randomDance4 = danceMoves[Math.floor(Math.random()*danceMoves.length)];
 
         let dance_text = document.getElementById("rand_danceMoves");
+        // This displays the randomised dance moves
         dance_text.innerHTML = randomDance1 + " ," + randomDance2 + " ," + randomDance3 + " and " + randomDance4 + " .";;
 
+        // if submit button clicked, run function
         document.getElementById("submit").addEventListener('click', checkPin);
 
+        // If icon clicked, run function
         document.getElementById("key_info").addEventListener("click" , showKey);
 
+        // This shows the info key
         function showKey() {
             let infoBox = document.getElementById("info_section");
 
@@ -143,22 +149,30 @@
             
         }
 
+        // This is the function check pin
         function checkPin() {
 
+            // set the value of the input
             let thePin = document.getElementById("the_pin").value;
 
+            // set value of first value of info
             let firstNum = thePin.charAt(0);
             let firstDance = danceMoves[firstNum];
 
+            // set value of second value of info            
             let secondNum = thePin.charAt(1);
             let secondDance = danceMoves[secondNum];
 
+            // set value of third value of info
             let thirdNum = thePin.charAt(2);
             let thirdDance = danceMoves[thirdNum];
 
+            // set value of fourth value of info
             let fourthNum = thePin.charAt(3);
             let fourthDance = danceMoves[fourthNum];
 
+            // Condition statement 
+            // if values inside the input correspondes with the dance moves, success
             if (firstDance == randomDance1 && secondDance == randomDance2 && thirdDance == randomDance3 && fourthDance == randomDance4){
                 alert("Success");
                 document.location.reload();
